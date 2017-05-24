@@ -52,11 +52,6 @@ namespace Core {
 			return 0;
 		}
 
-		std::vector<strType>::iterator parseExpression(File* file, std::vector<strType>* vec, std::vector<strType>::iterator begin) {
-			
-
-		}
-
 		int parseWFile(File* file) {
 			OC_LOG_INFO << "Launching wild parsing on :" << file->name();
 			if (oclib::is_same_type<strType, std::string>::value)

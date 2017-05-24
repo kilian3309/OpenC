@@ -145,6 +145,7 @@
     <ClInclude Include="tools.h" />
     <ClInclude Include="types.h" />
     <ClInclude Include="variables.h" />
+    <ClInclude Include="warnings.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

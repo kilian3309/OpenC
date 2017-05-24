@@ -1,12 +1,18 @@
-﻿  main.cpp
+﻿  functions.cpp
   Génération de code en cours...
   Compilation en cours...
+  types.cpp
   parsers.cpp
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): warning C4346: 'iterator' : le nom dépendant n'est pas un type
+  e:\c++\jvpp_def\jvpp_def\parsers.h(55): note: préfixer avec 'typename' pour indiquer un type
+  e:\c++\jvpp_def\jvpp_def\parsers.h(100): note: voir la référence à l'instanciation de classe modèle 'Core::Parser<fileNType,charType>' en cours de compilation
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): error C2061: erreur de syntaxe : identificateur 'iterator'
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
+  nllclass.cpp
+  main.cpp
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): warning C4346: 'iterator' : le nom dépendant n'est pas un type
+  e:\c++\jvpp_def\jvpp_def\parsers.h(55): note: préfixer avec 'typename' pour indiquer un type
+  e:\c++\jvpp_def\jvpp_def\parsers.h(100): note: voir la référence à l'instanciation de classe modèle 'Core::Parser<fileNType,charType>' en cours de compilation
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): error C2061: erreur de syntaxe : identificateur 'iterator'
+e:\c++\jvpp_def\jvpp_def\parsers.h(55): error C2334: jetons inattendus avant '{' ; corps apparent de la fonction ignoré
   Génération de code en cours...
-LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/FORCE'
-nllclass.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-parsers.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-types.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe : warning LNK4088: image en cours de génération à cause de l'option /FORCE ; l'image risque de ne pas s'exécuter
-  JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe
-  JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.pdb (Partial PDB)
