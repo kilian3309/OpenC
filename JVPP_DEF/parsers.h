@@ -14,6 +14,8 @@ namespace Core {
 		std::vector<charType> m_Separators = { '?', ',', '.', ';', '/', ':', '<', '>', '{', '}', '(', ')', '[', ']' };	//Non constant vector to allow adding symbols in run time
 		using strType = std::basic_string<charType, std::char_traits<charType>, std::allocator<charType>>;
 
+		Namespace* actualNamespace;
+
 	public:
 		Parser() {
 			assert((oclib::is_same_type<strType, std::string>::value || oclib::is_same_type<strType, std::wstring>::value) && "Incorrect strType ! (std::string or std::wstring only)");
@@ -50,7 +52,8 @@ namespace Core {
 			return 0;
 		}
 
-		int parseDeclaration(File* file) {
+		std::vector<strType>::iterator parseExpression(File* file, std::vector<strType>* vec, std::vector<strType>::iterator begin) {
+			
 
 		}
 
@@ -70,26 +73,20 @@ namespace Core {
 			}
 			OC_LOG_INFO << "Done !";
 			
-			std::vector<strType>* Lines = new std::vector<strType>;
+			std::vector<strType>* Lines = new std::vector<strType>; //Dynamic because huge amount of memory (depending of the file's size)
 			strType str;
 			while (!in.eof()) {
 				std::getline(in, str);
 				Lines->push_back(str);
 			}
 			OC_LOG_INFO << "File readed successfully";
+			//actualNamespace = 
 			std::vector<strType>doc;
 			for (std::vector<strType>::iterator it(Lines->begin()); it < Lines->end(); ++it) {
 				std::vector<strType>buf(wordParser(*it));
 				doc.insert(doc.end(), buf.begin(), buf.end());
 			}
 			delete Lines;
-
-			while (doc.size() > 0 && doc.at(0).at(0) == ' ') doc.erase(doc.begin(), doc.begin() + 1);
-
-			OC_LOG_INFO << "LIST:";
-			for (std::vector<strType>::iterator it(doc.begin()); it != doc.end(); ++it) {
-				OC_LOG_INFO << (*it);
-			}
 
 
 

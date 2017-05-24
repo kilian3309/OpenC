@@ -11,6 +11,9 @@ namespace Core {
 
 		strType m_Name;
 		std::vector<Core::Namespace> m_Namespaces;
+		int m_ErrorCount;
+
+
 	public:
 		_File(strType name, std::vector<Core::Namespace> nam = null) : m_Name(name), m_Namespaces(nam) {
 
@@ -23,6 +26,8 @@ namespace Core {
 		void addNamespace(Core::Namespace name) {
 			m_Namespaces.push_back(name);
 		}
+
+		
 
 		Core::Namespace* Namespace(typeNamespaceName name) {
 			for (std::vector<Core::Namespace>::iterator it(m_Namespaces.begin()); it != m_Namespaces.end(); ++it) {
