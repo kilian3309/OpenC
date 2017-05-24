@@ -27,10 +27,10 @@ int main() {
 	el::Loggers::reconfigureAllLoggers(conf);
 
 
-	Core::Namespace name;
+	Core::Namespace name(L"testNamespace");
 	Core::Type t_int(L"int");
 	Core::Function f(L"func", t_int, { &t_int });
-	Core::Instance inst(t_int);
+	Core::Instance inst(t_int, L"var");
 
 	t_int.addFunction(&f);
 

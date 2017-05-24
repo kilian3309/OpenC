@@ -1,12 +1,11 @@
-﻿  main.cpp
-  Génération de code en cours...
-  Compilation en cours...
+﻿E:\Programs\VS17\Common7\IDE\VC\VCTargets\Microsoft.CppClean.targets(76,5): warning : L'accès au chemin d'accès 'e:\c++\jvpp_def\debug\jvpp_def.exe' est refusé.
+  types.cpp
   parsers.cpp
+  nllclass.cpp
+  main.cpp
+  logger.cpp
+  functions.cpp
   Génération de code en cours...
 LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/FORCE'
-nllclass.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-parsers.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-types.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
-E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe : warning LNK4088: image en cours de génération à cause de l'option /FORCE ; l'image risque de ne pas s'exécuter
-  JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe
-  JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.pdb (Partial PDB)
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe'
+E:\Programs\VS17\Common7\IDE\VC\VCTargets\Microsoft.CppCommon.targets(647,5): error MSB6006: Arrêt de "link.exe" avec le code 1104.

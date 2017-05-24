@@ -2,11 +2,12 @@
 #include "types.h"
 
 namespace Core {
-	class Instance {
+	template<typename tyName>class _Instance {
 		Type* m_Type;
+		tyName m_Name;
 
 	public:
-		Instance(Type ty) : m_Type(&ty) {
+		_Instance(Type ty, tyName name) : m_Type(&ty), m_Name(name) {
 
 		}
 	
@@ -14,6 +15,9 @@ namespace Core {
 			return m_Type;
 		}
 		
+		inline tyName name() const {
+			return m_Name;
+		}
 
 
 	};

@@ -9,15 +9,23 @@ namespace Core {
 		std::vector<Function*> m_Functions;
 		std::vector<Type*> m_Types;
 		std::vector<Instance*> m_Instances;
-
+		tyName m_Name;
 
 	public:
-		_Namespace() {
+		_Namespace(tyName name) : m_Name(name) {
 
 		}
 
 		void addFunction(Function* func) {
 			m_Functions.push_back(func);
+		}
+
+		bool isInstance(typeInstanceName insName) {
+
+		}
+
+		void name() const {
+			return m_Name;
 		}
 
 		void addType(Type* ty) {

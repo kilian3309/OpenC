@@ -70,18 +70,24 @@ namespace Core {
 			}
 			OC_LOG_INFO << "Done !";
 			
-			std::vector<strType> Lines;
+			std::vector<strType>* Lines = new std::vector<strType>;
 			strType str;
 			while (!in.eof()) {
 				std::getline(in, str);
-				Lines.push_back(str);
+				Lines->push_back(str);
 			}
 			OC_LOG_INFO << "File readed successfully";
-			for (std::vector<strType>::iterator it(Lines.begin()); it < Lines.end(); ++it) {
-				std::vector<strType>line(wordParser(*it));
-
+			std::vector<strType>doc;
+			for (std::vector<strType>::iterator it(Lines->begin()); it < Lines->end(); ++it) {
+				std::vector<strType>buf(wordParser(*it));
+				doc.insert(doc.end(), buf.begin(), buf.end());
 			}
-
+			delete Lines;
+			while (doc.size() > 0 && doc.at(0) == L" ") doc.erase(doc.begin(), doc.begin() + 1);
+			OC_LOG_INFO << "LIST:";
+			for (std::vector<strType>::iterator it(doc.begin()); it != doc.end(); ++it) {
+				OC_LOG_INFO << (*it);
+			}
 
 
 

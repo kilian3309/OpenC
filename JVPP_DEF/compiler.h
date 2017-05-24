@@ -17,6 +17,7 @@ namespace Core {
 			m_Files.push_back(f);
 		}
 
+
 	};
 
 }
