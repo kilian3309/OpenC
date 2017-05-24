@@ -83,7 +83,9 @@ namespace Core {
 				doc.insert(doc.end(), buf.begin(), buf.end());
 			}
 			delete Lines;
-			while (doc.size() > 0 && doc.at(0) == L" ") doc.erase(doc.begin(), doc.begin() + 1);
+
+			while (doc.size() > 0 && doc.at(0).at(0) == ' ') doc.erase(doc.begin(), doc.begin() + 1);
+
 			OC_LOG_INFO << "LIST:";
 			for (std::vector<strType>::iterator it(doc.begin()); it != doc.end(); ++it) {
 				OC_LOG_INFO << (*it);
