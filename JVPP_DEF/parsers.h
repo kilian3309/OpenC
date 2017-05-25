@@ -15,6 +15,8 @@ namespace Core {
 		using strType = std::basic_string<charType, std::char_traits<charType>, std::allocator<charType>>;
 
 		Namespace* actualNamespace;
+		std::vector<strType>::iterator actualIterator;
+
 
 	public:
 		Parser() {
@@ -52,6 +54,14 @@ namespace Core {
 			return 0;
 		}
 
+		int parsePreprocessor(File* file) {
+
+		}
+
+		int parseVector(std::vector<strType>* vec) {
+
+		}
+
 		int parseWFile(File* file) {
 			OC_LOG_INFO << "Launching wild parsing on :" << file->name();
 			if (oclib::is_same_type<strType, std::string>::value)
@@ -83,7 +93,7 @@ namespace Core {
 			}
 			delete Lines;
 
-
+			parseVector(&doc);
 
 
 
