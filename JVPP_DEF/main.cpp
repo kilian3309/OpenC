@@ -45,9 +45,6 @@ int main() {
 	
 	_parser.parseWFile(&testFile);
 	std::vector<std::wstring> test =_parser.wordParser(L"test,54++5 4+  ++      ++dfgsedrg5445:5ft!!;;,\\");
-	for (std::vector<std::wstring>::iterator it(test.begin()); it < test.end(); ++it) {
-		OC_LOG_INFO << (*it);
-	}
 
 	system("PAUSE");
 
