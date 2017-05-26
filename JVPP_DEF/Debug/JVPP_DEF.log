@@ -9,8 +9,3 @@ types.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) d�
 E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe : warning LNK4088: image en cours de génération à cause de l'option /FORCE ; l'image risque de ne pas s'exécuter
   JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.exe
   JVPP_DEF.vcxproj -> E:\C++\JVPP_DEF\Debug\JVPP_DEF.pdb (Partial PDB)
-  'git' n'est pas reconnu en tant que commande interne
-  ou externe, un programme exécutable ou un fichier de commandes.
-  'git' n'est pas reconnu en tant que commande interne
-  ou externe, un programme exécutable ou un fichier de commandes.
-  Appuyez sur une touche pour continuer... 
