@@ -83,6 +83,9 @@
     <Link>
       <ForceFileOutput>Enabled</ForceFileOutput>
     </Link>
+    <PostBuildEvent>
+      <Command>E:\C++\JVPP_DEF\sync.bat</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
