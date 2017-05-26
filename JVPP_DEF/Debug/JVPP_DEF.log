@@ -1,7 +1,8 @@
 ﻿  main.cpp
   Génération de code en cours...
-  Ignoré... (aucune modification pertinente détectée)
+  Compilation en cours...
   parsers.cpp
+  Génération de code en cours...
 LINK : warning LNK4075: ' /INCREMENTAL' ignoré à cause de la spécification '/FORCE'
 nllclass.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
 parsers.obj : warning LNK4006: "class null_class null" (?null@@3Vnull_class@@A) déjà défini dans main.obj ; seconde définition ignorée
