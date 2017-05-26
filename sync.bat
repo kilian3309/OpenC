@@ -1,5 +1,3 @@
-"C:\Program Files\Git\git-cmd.exe" git commit -a --allow-empty-message -m ''
-echo exit
-"C:\Program Files\Git\git-cmd.exe" git push
-echo exit
+"C:\Program Files\Git\bin\git.exe" commit -a --allow-empty-message -m ''
+"C:\Program Files\Git\bin\git.exe" push
 pause
