@@ -7,16 +7,20 @@
 #include "fwd.h"
 #include "file.h"
 #include <cctype>
+#include <functional>
+#include <map>
 
 namespace Core {
 	template<typename fileNType, typename charType>class Parser {
 		fileNType m_File;
 		std::vector<charType> m_Separators = { '?', ',', '.', ';', '/', ':', '<', '>', '{', '}', '(', ')', '[', ']' };	//Non constant vector to allow adding symbols in run time
-using strType = std::basic_string<charType, std::char_traits<charType>, std::allocator<charType>>;
+		using strType = std::basic_string<charType, std::char_traits<charType>, std::allocator<charType>>;
 
-Namespace* actualNamespace;
+		Namespace* actualNamespace;
 
-std::wofstream outcode;
+		std::wofstream outcode;
+
+		std::map<strType, std::function<int(strType)>> m_ppParsers;
 
 
 	public:
