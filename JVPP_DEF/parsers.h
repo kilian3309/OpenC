@@ -20,7 +20,7 @@ namespace Core {
 
 		std::wofstream outcode;
 
-		std::map<strType, std::function<int(strType)>> m_ppParsers;
+		std::map<strType, std::function<int(strType&&)>> m_ppParsers;
 
 
 	public:
@@ -36,6 +36,11 @@ namespace Core {
 		void _Mybase() {
 			assert((oclib::is_same_type<strType, std::string>::value || oclib::is_same_type<strType, std::wstring>::value) && "Incorrect strType ! (std::string or std::wstring only)");
 			assert((oclib::is_same_type<charType, char>::value || oclib::is_same_type<charType, wchar_t>::value) && "Incorrect charType ! (char or wchar_t)");
+			//m_ppParsers.insert(std::make_pair(L"define", ));
+		}
+
+		int defineParser(strType&& str) {
+
 		}
 
 		bool openOut(strType& name) {

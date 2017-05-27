@@ -49,6 +49,19 @@ namespace oclib {
 		return N;
 	}
 
+
+	template<typename ret, typename args>class FunctionContainer {
+		std::function<ret(args)> func;
+
+	public:
+		ret operator()(args& arg) {
+			return func(arg);
+		}
+	};
+
+
+
+
 #ifndef OC_NO_VECTOR
 
 	template<typename T>bool is_in(const std::vector<T>&& vec, const T&& v) {
